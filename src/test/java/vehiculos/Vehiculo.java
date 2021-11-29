@@ -22,13 +22,18 @@ public class Vehiculo {
 		this.traccion=traccion;
 		this.fabricante=fabricante;	
 		cantidadVehiculos++;
-		
+		fabricante.getPais().vendidos++;		//se le suma 1 al país de donde es el vehículo
+		fabricante.vendidos++;		//se le suma 1 al fabricante del vehículo
 	}
 	
 	public static int getCantidadVehiculos() {
 		return Vehiculo.cantidadVehiculos;
 	}
 	
+	public static void setCantidadVehiculos(int cantidadVehiculos) {
+		Vehiculo.cantidadVehiculos = cantidadVehiculos;
+	}
+
 	public String vehiculosPorTipo() {
 		return "Automoviles: "+Automovil.getCantidadAutomoviles()+"\n"+
 			   "Camionetas: "+Camioneta.getCantidadCamionetas()+"\n"+
