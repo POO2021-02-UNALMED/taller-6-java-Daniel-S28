@@ -11,7 +11,7 @@ public class Pais {
 		listapaises.add(this);
 	}
 	
-	public Pais paisMasVendedor() {
+	public static Pais paisMasVendedor() {
 		int mayor=0;
 		Pais masvendedor=null;
 		for (Pais p:listapaises) {

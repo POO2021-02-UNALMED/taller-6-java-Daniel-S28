@@ -22,8 +22,8 @@ public class Vehiculo {
 		this.traccion=traccion;
 		this.fabricante=fabricante;	
 		cantidadVehiculos++;
-		fabricante.getPais().vendidos++;		//se le suma 1 al país de donde es el vehículo
-		fabricante.vendidos++;		//se le suma 1 al fabricante del vehículo
+		fabricante.getPais().vendidos++;		//se le suma 1 al pais de donde es el vehiculo
+		fabricante.vendidos++;		//se le suma 1 al fabricante del vehiculo
 	}
 	
 	public static int getCantidadVehiculos() {
